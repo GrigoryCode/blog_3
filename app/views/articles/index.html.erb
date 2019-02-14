@@ -1,0 +1,8 @@
+<h3>Welcome</h3>
+
+<% @articles.each do |article| %>
+  <hr>
+  <p><%= link_to article.title %></p>
+  <p>by: <%= article.author %></p>
+  <p><%= truncate(article.body, length:200) %></p>
+<% end %>
