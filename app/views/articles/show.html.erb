@@ -1,14 +1,13 @@
-<p>
-  <b>Title:</b>
+<h3>
   <%= @article.title %>
+</h3>
+
+<p>
+  by: <%= @article.author %>
 </p>
 
 <p>
-  <b>Author:</b>
-  <%= @article.author %>
-</p>
-
-<p>
-  <b>Article:</b>
   <%= @article.body %>
 </p>
+<p><%= link_to "Back", articles_path %></p>
+<p><%= link_to "Trash It", article_path(@article), method: :delete, data: {confirm: "Are you sure?"} %></p>
