@@ -16,7 +16,6 @@ ActiveRecord::Schema.define(version: 2019_02_14_134720) do
     t.string "author"
     t.string "title"
     t.text "body"
-    t.string "picture"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
